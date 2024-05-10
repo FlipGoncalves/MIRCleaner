@@ -1,0 +1,6 @@
+rm_mir_cleaner
+/home/filipino/Desktop/RM/TP2/rm_cleaner_ws/devel/.private/rm_mir_cleaner/cmake.lock /home/filipino/Desktop/RM/TP2/rm_cleaner_ws/devel/./cmake.lock
+/home/filipino/Desktop/RM/TP2/rm_cleaner_ws/devel/.private/rm_mir_cleaner/lib/rm_mir_cleaner/rm_cleaner /home/filipino/Desktop/RM/TP2/rm_cleaner_ws/devel/lib/rm_mir_cleaner/rm_cleaner
+/home/filipino/Desktop/RM/TP2/rm_cleaner_ws/devel/.private/rm_mir_cleaner/lib/pkgconfig/rm_mir_cleaner.pc /home/filipino/Desktop/RM/TP2/rm_cleaner_ws/devel/lib/pkgconfig/rm_mir_cleaner.pc
+/home/filipino/Desktop/RM/TP2/rm_cleaner_ws/devel/.private/rm_mir_cleaner/share/rm_mir_cleaner/cmake/rm_mir_cleanerConfig.cmake /home/filipino/Desktop/RM/TP2/rm_cleaner_ws/devel/share/rm_mir_cleaner/cmake/rm_mir_cleanerConfig.cmake
+/home/filipino/Desktop/RM/TP2/rm_cleaner_ws/devel/.private/rm_mir_cleaner/share/rm_mir_cleaner/cmake/rm_mir_cleanerConfig-version.cmake /home/filipino/Desktop/RM/TP2/rm_cleaner_ws/devel/share/rm_mir_cleaner/cmake/rm_mir_cleanerConfig-version.cmake

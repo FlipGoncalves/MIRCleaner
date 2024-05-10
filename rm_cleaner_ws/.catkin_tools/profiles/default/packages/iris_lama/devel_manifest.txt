@@ -1,0 +1,6 @@
+iris_lama
+/home/filipino/Desktop/RM/TP2/rm_cleaner_ws/devel/.private/iris_lama/cmake.lock /home/filipino/Desktop/RM/TP2/rm_cleaner_ws/devel/./cmake.lock
+/home/filipino/Desktop/RM/TP2/rm_cleaner_ws/devel/.private/iris_lama/lib/libiris_lama.so /home/filipino/Desktop/RM/TP2/rm_cleaner_ws/devel/lib/libiris_lama.so
+/home/filipino/Desktop/RM/TP2/rm_cleaner_ws/devel/.private/iris_lama/lib/pkgconfig/iris_lama.pc /home/filipino/Desktop/RM/TP2/rm_cleaner_ws/devel/lib/pkgconfig/iris_lama.pc
+/home/filipino/Desktop/RM/TP2/rm_cleaner_ws/devel/.private/iris_lama/share/iris_lama/cmake/iris_lamaConfig.cmake /home/filipino/Desktop/RM/TP2/rm_cleaner_ws/devel/share/iris_lama/cmake/iris_lamaConfig.cmake
+/home/filipino/Desktop/RM/TP2/rm_cleaner_ws/devel/.private/iris_lama/share/iris_lama/cmake/iris_lamaConfig-version.cmake /home/filipino/Desktop/RM/TP2/rm_cleaner_ws/devel/share/iris_lama/cmake/iris_lamaConfig-version.cmake

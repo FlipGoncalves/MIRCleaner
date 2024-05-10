@@ -1,0 +1,1 @@
+/home/filipino/Desktop/RM/TP2/rm_cleaner_ws/devel/.private/catkin_tools_prebuild/setup.bash

@@ -1,0 +1,1 @@
+/home/filipino/Desktop/RM/TP2/rm_cleaner_ws/devel/.private/iris_lama/share/iris_lama/cmake/iris_lamaConfig-version.cmake
