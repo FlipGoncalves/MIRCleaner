@@ -11,6 +11,7 @@ sudo apt install ros-noetic-map-server
 sudo apt install ros-noetic-mir-navigation
 sudo apt install ros-noetic-mir-gazebo
 sudo apt install ros-noetic-ira-laser-tools
+sudo apt install ros-noetic-multirobot-map-merge ros-noetic-explore-lite
 ```
 
 ## Creating the Repo
@@ -47,5 +48,13 @@ roslaunch mir_navigation amcl.launch
 roslaunch rm_mir_cleaner start_map.launch
 rosrun rm_mir_cleaner start_world.sh
 roslaunch rm_mir_cleaner laserscan_multi_merger.launch
+rviz
+```
+
+### Running the Mapper 
+```
+roslaunch mir_gazebo mir_maze_world.launch
+roslaunch rm_mir_cleaner move_base.launch
+rosrun mir_mapper mir_mapper_node.py
 rviz
 ```
