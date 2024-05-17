@@ -58,3 +58,8 @@ roslaunch rm_mir_cleaner move_base.launch
 rosrun mir_mapper mir_mapper_node.py
 rviz
 ```
+
+### Saving the Map
+```
+rosrun map_server map_saver -f mapname
+```
