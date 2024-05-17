@@ -12,7 +12,7 @@ def start_explore_lite():
 def start_slam():
     # Start gmapping for SLAM
     rospy.loginfo("Starting gmapping for SLAM...")
-    subprocess.Popen(["rosrun", "gmapping", "slam_gmapping", "scan:=scan_multi", "_map_update_interval:=3", "_linearUpdate:=0.5"])
+    subprocess.Popen(["rosrun", "gmapping", "slam_gmapping"])
 
 def main():
     rospy.init_node('mir_mapper_node', anonymous=True)
