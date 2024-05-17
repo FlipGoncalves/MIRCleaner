@@ -11,11 +11,11 @@ class MIRCleaner:
         rospy.init_node('mir_cleaner_node', anonymous=True)
 
         # Parameters
+        self.cleaning_path = []
+        self.map_data = None
         self.map_subscriber = rospy.Subscriber('/map', OccupancyGrid, self.map_callback)
         self.client = actionlib.SimpleActionClient('move_base', MoveBaseAction)
         self.client.wait_for_server()
-        self.cleaning_path = []
-        self.map_data = None
 
         rospy.loginfo("MIR Cleaner Node Initialized")
 
