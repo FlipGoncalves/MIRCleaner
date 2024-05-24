@@ -59,6 +59,12 @@ rosrun mir_mapper mir_mapper_node.py
 rviz
 ```
 
+COLCOAR O GAZEBO A DAR NO PLAY
+
+```
+catkin build && . devel/setup.bash && clear && roslaunch mir_mapper mir_mapper.launch
+```
+
 ### Saving the Map
 ```
 rosrun map_server map_saver -f mapname

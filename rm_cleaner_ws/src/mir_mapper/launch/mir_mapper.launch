@@ -1,0 +1,30 @@
+<launch>
+    <!-- Launch gazebo -->
+    <include file="$(find mir_gazebo)/launch/mir_maze_world.launch"/>
+
+    <!-- Launch mobe_base -->
+    <include file="$(find rm_mir_cleaner)/launch/move_base.launch"/>
+
+    <!-- Launch laserscan merger -->
+    <include file="$(find rm_mir_cleaner)/launch/laserscan_multi_merger.launch"/>
+
+    <!-- Launch gmapping for SLAM -->
+    <node name="slam_gmapping" pkg="gmapping" type="slam_gmapping" output="screen">
+        <!-- <param name="odom_frame" value="odom" />
+        <param name="map_update_interval" value="3.0" />
+        <param name="linearUpdate" value="0.5" />
+        <param name="angularUpdate" value="0.5" />
+        <param name="xmin" value="-10.0" />
+        <param name="ymin" value="-10.0" />
+        <param name="xmax" value="10.0" />
+        <param name="ymax" value="10.0" />
+        <param name="delta" value="0.05" /> -->
+        <remap from="scan" to="scan_multi" />
+    </node>
+
+    <!-- Launch the mir_mapper_node -->
+    <node name="rviz" pkg="rviz" type="rviz" args="-d /home/filipino/Desktop/MIRCleaner/rm_cleaner_ws/src/rviz-config.rviz" />
+
+    <!-- Launch explore_lite for autonomous exploration -->
+    <include file="$(find explore_lite)/launch/explore.launch"/>
+</launch>
