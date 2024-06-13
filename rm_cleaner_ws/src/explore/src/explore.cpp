@@ -291,7 +291,7 @@ void Explore::stop()
   exploring_timer_.stop();
   ROS_INFO("Exploration stopped!");
   ROS_INFO("Saving the map...");
-  if (system("rosrun map_server map_saver -f $(rospack find rm_mir_cleaner)/maps/ExplorationMap") == 0) {
+  if (system("rosrun map_server map_saver -f $(rospack find mir_mapper)/maps/ExplorationMap") == 0) {
       ROS_INFO("Map saved successfully");
   } else {
       ROS_ERROR("Failed to save map");
