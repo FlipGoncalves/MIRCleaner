@@ -1,0 +1,27 @@
+<launch>
+    <!-- Launch map -->
+    <node name="map_server" pkg="map_server" type="map_server" args="$(find mir_mapper)/maps/ExplorationMap.yaml" />
+
+    <!-- Launch gazebo -->
+    <include file="$(find mir_gazebo)/launch/mir_maze_world.launch"/>
+
+     <!-- Launch amcl (move_base localization) -->
+    <roslaunch file="$(find mir_navigation)/launch/amcl.launch" />
+
+    <!-- Launch mobe_base -->
+    <include file="$(find rm_mir_cleaner)/launch/move_base.launch"/>
+
+    <!-- Launch laserscan merger -->
+    <include file="$(find rm_mir_cleaner)/launch/laserscan_multi_merger.launch"/>
+
+    <!-- Launch the rviz -->
+    <node name="rviz" pkg="rviz" type="rviz" args="-d /home/filipino/Desktop/MIRCleaner/rm_cleaner_ws/src/rviz-config.rviz" />
+
+    <!-- Launch MIR Cleaner -->
+    <node name="mir_cleaner" pkg="mir_cleaner" type="mir_cleaner_node.py" output="screen">
+        <param name="percentage" value="10" />
+    </node>
+    
+</launch>
+
+<!-- roslaunch mir_navigation amcl.launch -->
