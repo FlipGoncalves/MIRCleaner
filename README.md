@@ -52,20 +52,14 @@ rviz
 ```
 
 ### Running the Mapper 
-```
-roslaunch mir_gazebo mir_maze_world.launch
-roslaunch rm_mir_cleaner move_base.launch
-rosrun mir_mapper mir_mapper_node.py
-rviz
-```
-
 COLCOAR O GAZEBO A DAR NO PLAY
-
 ```
 catkin build && . devel/setup.bash && clear && roslaunch mir_mapper mir_mapper.launch
 ```
 
-### Saving the Map
+### Running the Mapper 
+COLCOAR O GAZEBO A DAR NO PLAY
 ```
-rosrun map_server map_saver -f mapname
+catkin build && . devel/setup.bash && clear && roslaunch mir_cleaner mir_cleaner.launch
+. devel/setup.bash && roslaunch mir_navigation amcl.launch
 ```
