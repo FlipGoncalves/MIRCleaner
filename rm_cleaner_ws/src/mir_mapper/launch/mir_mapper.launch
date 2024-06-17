@@ -10,18 +10,8 @@
 
     <!-- Launch gmapping for SLAM -->
     <node name="slam_gmapping" pkg="gmapping" type="slam_gmapping" output="screen">
-        <!-- 
-        <param name="odom_frame" value="odom" />
-        <param name="map_update_interval" value="3.0" />
-        <param name="linearUpdate" value="0.5" />
-        <param name="angularUpdate" value="0.5" />
-        <param name="xmin" value="-10.0" />
-        <param name="ymin" value="-10.0" />
-        <param name="xmax" value="10.0" />
-        <param name="ymax" value="10.0" />
-        <param name="delta" value="0.05" /> 
-        -->
         <remap from="scan" to="scan_multi" />
+        <param name="linearUpdate" value="0.2"/>   <!-- Linear update rate -->
     </node>
 
     <!-- Launch the rviz -->
