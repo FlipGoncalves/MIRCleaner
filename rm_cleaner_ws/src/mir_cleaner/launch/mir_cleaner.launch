@@ -15,7 +15,7 @@
     <include file="$(find rm_mir_cleaner)/launch/laserscan_multi_merger.launch"/>
 
     <!-- Launch the rviz -->
-    <node name="rviz" pkg="rviz" type="rviz" args="-d /home/filipino/Desktop/MIRCleaner/rm_cleaner_ws/src/rviz-config.rviz" />
+    <node name="rviz" pkg="rviz" type="rviz" args="-d $(find mir_mapper)/rviz/rviz-config.rviz" />
 
     <!-- Launch MIR Cleaner -->
     <node name="mir_cleaner" pkg="mir_cleaner" type="mir_cleaner_node.py" output="screen">
